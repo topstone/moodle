@@ -77,8 +77,8 @@ class navigation_node_collection implements Countable, IteratorAggregate {
      */
     public function add(navigation_node $node, $beforekey = null) {
         global $CFG;
-        $key = $node->key;
-        $type = $node->type;
+        $key = $node->key ?? '';
+        $type = $node->type ?? '';
 
         // First check we have a 2nd dimension for this type.
         if (!array_key_exists($type, $this->orderedcollection)) {
