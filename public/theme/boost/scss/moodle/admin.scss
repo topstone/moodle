@@ -890,3 +890,14 @@ $notification-cta-brands: (
 .notification-label-notice {
     color: var(--mds-text-feedback-info, #00475a);
 }
+
+#page-admin-index .moodleupdateinfo .btn-secondary {
+    @include dark-mode {
+        --bs-btn-bg: #{$dark-surface-raised};
+        --bs-btn-border-color: #{$gray-600};
+        --bs-btn-color: #{$gray-100};
+        --bs-btn-hover-bg: #{$gray-700};
+        --bs-btn-hover-border-color: #{$gray-500};
+        --bs-btn-hover-color: #{$white};
+    }
+}
