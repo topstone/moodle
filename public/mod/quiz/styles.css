@@ -313,8 +313,9 @@
 body.path-mod-quiz .gradedattempt,
 body.path-mod-quiz table tbody tr.gradedattempt > td,
 body.path-mod-quiz table tbody tr.gradedattempt > td.sticky-column {
-    border-color: #bce8f1;
-    background-color: #d9edf7;
+    border-color: var(--bs-info-border-subtle, rgba(13, 202, 240, 0.2));
+    background-color: var(--bs-info-bg-subtle, rgba(13, 202, 240, 0.15));
+    color: inherit;
 }
 
 body.path-mod-quiz table tbody tr > td.sticky-column,
