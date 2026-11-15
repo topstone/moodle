@@ -74,16 +74,30 @@ body.behat-site {
     vertical-align: baseline;
     color: $phpinfo-color;
     background-color: $phpinfo-bg;
+
+    @include dark-mode {
+        border-color: $gray-700;
+        color: $gray-100;
+        background-color: $dark-surface-raised;
+    }
 }
 
 .phpinfo .e {
     background-color: $phpinfo-e-bg;
     font-weight: bold;
+
+    @include dark-mode {
+        background-color: mix($indigo, $dark-surface-raised, 25%);
+    }
 }
 
 .phpinfo .h {
     background-color: $phpinfo-h-bg;
     font-weight: bold;
+
+    @include dark-mode {
+        background-color: mix($indigo, $dark-surface-raised, 45%);
+    }
 }
 
 // PHP debug messages.
