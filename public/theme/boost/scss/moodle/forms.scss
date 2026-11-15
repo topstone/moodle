@@ -277,12 +277,17 @@ div#dateselector-calendar-panel {
     min-height: 2 * $input-padding-y-sm + 2 * $font-size-base;
 }
 
-.form-autocomplete-selection [role=option] {
+.form-autocomplete-selection .badge[role=option] {
     cursor: pointer;
     white-space: inherit;
     word-break: break-word;
     line-height: 1.4;
     text-align: left;
+    --#{$prefix}secondary-rgb: var(--#{$prefix}secondary-bg-rgb);
+    --#{$prefix}dark-rgb: var(--#{$prefix}body-color-rgb);
+    background-color: var(--#{$prefix}secondary-bg);
+    color: var(--#{$prefix}body-color);
+    border: $border-width solid var(--#{$prefix}border-color);
 }
 
 .form-autocomplete-suggestions {
